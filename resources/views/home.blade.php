@@ -54,6 +54,28 @@
                         </div>
                     @elseif($role_id == 2)
                     <!--MENU UNTUK PEMBELI-->
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <div class="card p-2">
+                                    <div class="card-header text-white bg-primary">Produk Anda</div>
+
+                                    <div class="card-body">
+                                        <span>Lihat produk anda</span>
+                                    </div>
+                                    <a href="{{ url('input_produk') }}" class="btn btn-sm text-white btn-info">Lihat</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card p-2">
+                                    <div class="card-header text-white bg-success">Pembatalan Produk</div>
+
+                                    <div class="card-body">
+                                        <span>Lihat Pembatalan Produk</span>
+                                    </div>
+                                    <a href="{{ url('report_produk') }}" class="btn btn-sm text-white btn-warning">Lihat</a>
+                                </div>
+                            </div>
+                        </div>
                     @endif
                 </div>
             </div>
